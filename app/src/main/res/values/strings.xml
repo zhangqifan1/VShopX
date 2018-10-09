@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">钒</string>
+    <string name="title_activity_guide">GuideAc</string>
+    <string name="first_enter_Message">你好，初次见面，多多指教！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shoppingcat">购物车</string>
+    <string name="actionBar_edit">编辑</string>
+    <string name="all">全选</string>
+    <string name="order_total">合计 :</string>
+    <string name="message_permission_rationale">继续申请权限</string>
+
+</resources>

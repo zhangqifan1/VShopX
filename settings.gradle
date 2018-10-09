@@ -1,0 +1,2 @@
+include ':app', ':VShoplibrary', ':android-library-map'
+include ':xAlertDialogLibrary'

@@ -1,0 +1,123 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="org.lenve.flexbox.MainActivity">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/QQLogin"
+                style="@style/myself"
+                android:text="QQ登录" />
+
+            <TextView
+                android:id="@+id/WBLogin"
+                style="@style/myself"
+                android:text="微博登录" />
+
+            <TextView
+                android:id="@+id/QQshare"
+                style="@style/myself"
+                android:text="QQ分享" />
+
+            <TextView
+                android:id="@+id/Wbshare"
+                style="@style/myself"
+                android:text="微博分享" />
+
+            <TextView
+                android:id="@+id/voiceHc"
+                style="@style/myself"
+                android:text="讯飞语音合成" />
+
+            <TextView
+                android:id="@+id/voiceSb"
+                style="@style/myself"
+                android:text="讯飞语音识别" />
+
+            <TextView
+                android:id="@+id/MobSMS"
+                style="@style/myself"
+                android:text="Mob短信验证" />
+
+            <TextView
+                style="@style/myself"
+                android:text="极光推送" />
+
+            <TextView
+                style="@style/myself"
+                android:text="APK加固(爱加密)" />
+
+            <TextView
+                style="@style/myself"
+                android:text="APK瘦身" />
+
+            <TextView
+                style="@style/myself"
+                android:text="多渠道打包(UM+AS)" />
+
+            <TextView
+                style="@style/myself"
+                android:text="第三方功能未完待续" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <FrameLayout
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/black">
+
+            <com.universalvideoview.UniversalVideoView
+                android:id="@+id/videoView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                app:uvv_autoRotation="true"
+                app:uvv_fitXY="false" />
+
+            <com.universalvideoview.UniversalMediaController
+                android:id="@+id/media_controller"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:uvv_scalable="true" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@color/uvv_green"
+                android:gravity="center"
+                android:text="start" />
+
+            <TextView
+                android:id="@+id/introduction"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/uvv_gray"
+                android:gravity="center"
+                android:text="对安卓原生视频播放器的封装改进" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
